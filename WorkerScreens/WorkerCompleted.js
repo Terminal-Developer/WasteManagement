@@ -1,30 +1,29 @@
 import React from 'react';
 import { StyleSheet, Text, Image, Button, View } from 'react-native';
 
-function SupervisorCompleted() {
+function WorkCompleted() {
     return (
         <View style={styles.Card}>
             <View style={{ flexDirection: 'row' }}>
                 <Image
                     source={require('../assets/Garbage cleaned.png')} style={{ width: 100, height: 100, marginBottom: 0 }}
                 />
-                <Text style={{ marginLeft: 50, marginTop: 0, fontSize: 15 }}> <li>Name : User 1</li>
-                    <li>Location 1</li>
-                    <li>Worker Completed the Work</li>
+                <Text style={{ marginLeft: 50, marginTop: 0, fontSize: 15 }}> <li>Worker Name : 1</li>
+                    <li>Location at which cleaning is done </li>
                 </Text>
 
 
             </View>
             <View style={styles.button}>
                 <Button
-                    title='Notify the User'
+                    title='Notify the Supervisor'
                 />
             </View>
         </View>
     );
 }
 
-export default SupervisorCompleted;
+export default WorkCompleted;
 
 const styles = StyleSheet.create({
     Card: {

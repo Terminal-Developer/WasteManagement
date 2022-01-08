@@ -9,6 +9,7 @@ import SignUp from './src/pages/SignUp';
 import { Component } from 'react/cjs/react.production.min';
 
 import Supervisor from './SupervisorScreens/Supervisor';
+import Worker from './WorkerScreens/Workers';
 
 export default function App() {
 
@@ -18,8 +19,9 @@ export default function App() {
      <Login />
      <SignUp/>
      <UserTab/>
-     </View>*/
-     <Supervisor/>
+     </View>
+     <Supervisor/>*/
+     <Worker/>
 
    
   );
