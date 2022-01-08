@@ -1,5 +1,5 @@
 import React from "react";
-import { SafeAreaView, StyleSheet, TextInput, View } from "react-native";
+import { SafeAreaView, StyleSheet, TextInput, View, Text } from "react-native";
 
 const Login = () => {
   const [text, onChangeText] = React.useState(null);
@@ -8,15 +8,15 @@ const Login = () => {
   return (
     <View>
 
-      {/* <Text>Name</Text> */}
+      <Text style={styles.text}>Name</Text>
       <TextInput
         style={styles.input}
         onChangeText={onChangeText}
         value={text}
-        placeholder="Name"
+        placeholder="Username/Email"
         keyboardType="text"
       />
-
+      <Text style={styles.text}>Passward</Text>
       <TextInput
         style={styles.input}
         onChangeText={onChangeNumber}
@@ -32,10 +32,15 @@ const Login = () => {
 const styles = StyleSheet.create({
   input: {
     height: 40,
-    margin: 12,
+    marginLeft: 12,
     borderWidth: 1,
     padding: 10,
   },
+
+  text:{
+    marginLeft: 12,
+
+  }
 });
 
 export default Login;
