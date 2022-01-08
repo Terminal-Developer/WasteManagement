@@ -21,16 +21,6 @@ const SignUp = () => {
   return (
     <View>
     <Text>SignUp Form</Text>
-
-    <Picker
-        selectedValue={selectedValue}
-        style={{ height: 50, width: 150 }}
-        onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
-      >
-        <Picker.Item label="Java" value="java" />
-        <Picker.Item label="JavaScript" value="js" />
-      </Picker>
-
       <Text style={styles.text}>Name</Text>
       <TextInput
         onChangeText={onChangeText}
@@ -71,11 +61,15 @@ const SignUp = () => {
       />
 
 <Text style={styles.text}>Position:</Text>
-    <Dropdown  
+<Picker
+        selectedValue={selectedValue}
         style={styles.input}
-        label='Position'
-        data={data}
-    />
+        onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
+      >
+        <Picker.Item label="Citizen" value="Citizen" />
+        <Picker.Item label="Worker" value="Worker" />
+        <Picker.Item label="Superwiser" value="Superwiser" />
+      </Picker>
 
 <Button
         title="SignUp"

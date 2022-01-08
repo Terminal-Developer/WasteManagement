@@ -3,7 +3,8 @@ import { NavigationContainer } from '@react-navigation/native';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, } from 'react-native';
 
-import UserTab from './src/pages/UserTab'
+import UserReport from './src/pages/UserReport';
+// import UserNew from './src/pages/UserNew';
 import Login from './src/pages/Login';
 import SignUp from './src/pages/SignUp';
 import { Component } from 'react/cjs/react.production.min';
@@ -14,12 +15,14 @@ export default function App() {
 
 
   return (
-    /*<View>
+    <View>
      <Login />
      <SignUp/>
-     <UserTab/>
-     </View>*/
+     <UserReport/>
+     {/* <UserNew/> */}
      <Supervisor/>
+     </View>
+     
 
    
   );
