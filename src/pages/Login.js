@@ -7,7 +7,7 @@ const Login = () => {
 
   return (
     <View>
-
+      <Text>Login Form</Text>
       <Text style={styles.text}>Name</Text>
       <TextInput
         style={styles.input}
