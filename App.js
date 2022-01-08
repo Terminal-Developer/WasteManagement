@@ -2,8 +2,8 @@ import React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
-import UserTab from './UserTab'
-import Login from './Login';
+import UserTab from './src/pages/UserTab'
+import Login from './src/pages/Login';
 
 export default function App() {
   return (
