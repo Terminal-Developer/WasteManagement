@@ -1,5 +1,5 @@
 import React from "react";
-import { SafeAreaView, StyleSheet, TextInput, View, Text } from "react-native";
+import { SafeAreaView, StyleSheet, Button, TextInput, View, Text } from "react-native";
 
 const Login = () => {
   const [text, onChangeText] = React.useState(null);
@@ -25,7 +25,12 @@ const Login = () => {
         keyboardType="numeric"
       />
 
+      <Button
+        title="Login"
+      />
+
     </View>
+    
   );
 };
 
