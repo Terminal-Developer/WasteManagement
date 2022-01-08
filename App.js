@@ -4,6 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 
 import UserTab from './src/pages/UserTab'
 import Login from './src/pages/Login';
+import { Component } from 'react/cjs/react.production.min';
 
 export default function App() {
   return (
