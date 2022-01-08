@@ -1,21 +1,19 @@
-import React from 'react';
-import { View} from 'react-native';
-import { useState } from 'react';
-import { Picker } from '@react-native-picker/picker';
+import React,{useState} from 'react';
+import { View,Picker} from 'react-native';
 
 export default Assign = () => {
-    const [pickerValue, setPickerValue] = useState('Assign to')
+    const [selectedValue, setSelectedValue] = useState("java");
 
     return (
         <View>
             <Picker
-                selectedValue = {pickerValue}
-                onValueChange = { (itemValue) => setPickerValue(itemValue)}>
-                <Picker.Item label = "Assign To" value='Assign To' />
-                <Picker.Item label = "Worker 1" value='Worker 1' />
-                <Picker.Item label = "Worker 2" value='Worker 2' />
-                <Picker.Item label = "Worker 3" value='Worker 3' />
-            </Picker>
+                selectedValue={selectedValue}
+                style={{ height: 50, width: 150 }}
+            onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
+            >
+        <Picker.Item label="Java" value="java" />
+        <Picker.Item label="JavaScript" value="js" />
+      </Picker>
         </View>
     )
 }

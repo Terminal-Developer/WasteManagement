@@ -1,8 +1,9 @@
-import React from 'react';
-import { StyleSheet, View, Button, Alert } from 'react-native';
-
+import React,{useState} from 'react';
+import { StyleSheet, View, Picker,Button, Alert } from 'react-native';
+// import Assign from './Picker.js';
 
 function SupervisorNew() {
+    const [selectedValue, setSelectedValue] = useState("java");
     return (
 
 
@@ -25,9 +26,18 @@ function SupervisorNew() {
                     <Button
                         title="Delete"
                     />
-                    <Button
+                    <Picker
+                selectedValue={selectedValue}
+                style={{ height: 50, width: 150 }}
+                onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
+            >
+            <Picker.Item label="Java" value="java" />
+            <Picker.Item label="JavaScript" value="js" />
+      </Picker>
+
+                    {/* <Button
                         title="Assign To"
-                    />
+                    /> */}
                 </View>
             </View>
         </View>

@@ -1,6 +1,6 @@
-import React from "react";
+import React, {useState} from "react";
 
-import { SafeAreaView, StyleSheet,Button, TextInput, View, Text } from "react-native";
+import { SafeAreaView, StyleSheet,Button,Picker, TextInput, View, Text } from "react-native";
 import {Dropdown} from 'react-native-element-dropdown';
 // import {
 //     Dropdown }
@@ -16,10 +16,21 @@ const data = [
 const SignUp = () => {
   const [text, onChangeText] = React.useState(null);
   const [number, onChangeNumber] = React.useState(null);
+  const[selectedValue, setSelectedValue] = useState("Java");
 
   return (
     <View>
     <Text>SignUp Form</Text>
+
+    <Picker
+        selectedValue={selectedValue}
+        style={{ height: 50, width: 150 }}
+        onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
+      >
+        <Picker.Item label="Java" value="java" />
+        <Picker.Item label="JavaScript" value="js" />
+      </Picker>
+
       <Text style={styles.text}>Name</Text>
       <TextInput
         onChangeText={onChangeText}
