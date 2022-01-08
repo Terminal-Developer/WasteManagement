@@ -5,6 +5,8 @@ function SupervisorNew() {
     const [selectedValue, setSelectedValue] = useState("Assign To");
     const [selectedValue2, setSelectedValue2] = useState("Assign To");
     const [selectedValue3, setSelectedValue3] = useState("Assign To");
+
+
     return (
 
 
@@ -27,6 +29,7 @@ function SupervisorNew() {
                         onPress={() => Alert.alert('Right button pressed')}
                     />
 
+
                     <Picker
                         selectedValue={selectedValue}
                         style={{ height: 40, width: 90, backgroundColor: '#2196F3', color: 'white' }}
@@ -37,8 +40,6 @@ function SupervisorNew() {
                         <Picker.Item label="Worker 2" value="Worker 2" />
                         <Picker.Item label="Worker 3" value="Worker 3" />
                     </Picker>
-
-
                 </View>
             </View>
 
@@ -61,6 +62,7 @@ function SupervisorNew() {
                         ])}
                     />
                     <Picker
+
                         selectedValue2={selectedValue2}
                         style={{ height: 40, width: 90, backgroundColor: '#2196F3', color: 'white' }}
                         onValueChange={(itemValue, itemIndex) => setSelectedValue2(itemValue)}
