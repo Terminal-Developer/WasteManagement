@@ -1,6 +1,17 @@
 import React from "react";
 
 import { SafeAreaView, StyleSheet,Button, TextInput, View, Text } from "react-native";
+import {Dropdown} from 'react-native-element-dropdown';
+// import {
+//     Dropdown }
+//     from 'react-native-material-dropdown';
+
+const data = [
+    {value: '1'},
+    {value: '2'},
+    {value: '3'}
+];
+
 
 const SignUp = () => {
   const [text, onChangeText] = React.useState(null);
@@ -11,9 +22,8 @@ const SignUp = () => {
     <Text>SignUp Form</Text>
       <Text style={styles.text}>Name</Text>
       <TextInput
-        style={styles.input}
         onChangeText={onChangeText}
-        value={text}
+        style={styles.input}
         placeholder="Name"
         keyboardType="text"
       />
@@ -22,7 +32,6 @@ const SignUp = () => {
       <TextInput
         style={styles.input}
         onChangeText={onChangeText}
-        value={text}
         placeholder="Username"
         keyboardType="text"
       />
@@ -31,7 +40,6 @@ const SignUp = () => {
       <TextInput
         style={styles.input}
         onChangeText={onChangeText}
-        value={text}
         placeholder="xyz123@gmail.com"
         keyboardType="text"
       />
@@ -40,18 +48,23 @@ const SignUp = () => {
       <TextInput
         style={styles.input}
         onChangeText={onChangeNumber}
-        value={number}
         placeholder="Passward"
-        keyboardType="numeric"
+        keyboardType="text"
       />
       <Text style={styles.text}>Confirm Passward</Text>
       <TextInput
         style={styles.input}
         onChangeText={onChangeNumber}
-        value={number}
         placeholder="Confirm Passward"
         keyboardType="numeric"
       />
+
+<Text style={styles.text}>Position:</Text>
+    <Dropdown  
+        style={styles.input}
+        label='Position'
+        data={data}
+    />
 
 <Button
         title="SignUp"

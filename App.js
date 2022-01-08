@@ -13,9 +13,9 @@ import Supervisor from './SupervisorScreens/Supervisor';
 export default function App() {
   return (
     <View style={styles.root}>
-     {/* <UserTab/>
       <Login />
-     <SignUp/>*/}
+     <SignUp/>
+     <UserTab/>
      <Supervisor />
 
     </View>
