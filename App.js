@@ -12,34 +12,16 @@ import Supervisor from './SupervisorScreens/Supervisor';
 
 export default function App() {
 
-  
 
-  // constructor(); {
-  //   super()
-
-  //   this.renderScene = this.renderScene.bind(this)
-  // }
-
-  // renderScene(route, navigator); {
-  //   if(rout.name === 'loginpage'){
-  //     return <Login navigator={navigator}/>
-  //   }
-  //   else if(rout.name === 'signuppage'){
-  //     return<About navigator={navigator}/>
-  //   }
-  // }
   return (
-    <View>
+    /*<View>
      <Login />
      <SignUp/>
      <UserTab/>
+     </View>*/
      <Supervisor/>
-     </View>
 
-    // <Navigator 
-    //   initialRout={{name:'loginpage'}}
-    //   renderScene={this.renderScene}
-    // />
+   
   );
 }
 
