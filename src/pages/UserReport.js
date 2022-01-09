@@ -13,7 +13,7 @@ function UserReport() {
                     
                 </Button>
                 <View style={styles.row}>
-                    <Image  source={require('../assets/garbage.png')} style={{width: 100, height:100}}
+                    <Image  source={require('../../assets/garbage.png')} style={{width: 100, height:100}}
                    />
                         <View style={styles.column}>
                             <Text style={styles.text}>Location</Text>

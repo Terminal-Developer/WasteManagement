@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "238200007759",
+    "project_id": "waste-management-26888",
+    "storage_bucket": "waste-management-26888.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:238200007759:android:d84c1762f08d5cb7420e3a",
+        "android_client_info": {
+          "package_name": "com.reactnativefirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "238200007759-vgp3q36ld7is1a1o85p121hr1cleehqa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7TGcaKLoKgB6qnYOUZ0kgCiwiTIcb_m8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "238200007759-vgp3q36ld7is1a1o85p121hr1cleehqa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
